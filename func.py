@@ -260,7 +260,7 @@ def dynamic_convert_csv_to_txt(input_csv, output_txt):
 
 
 
-def calc_bias_block(result_df_in,match_df_in,left_df_in,right_df_in, task , sens_dict):
+def calc_bias_block(result_df_in,match_df_in,left_df_in,right_df_in, task , sens_dict, input_match_sens = []):
 
     result_df  = result_df_in.copy()
     match_df  = match_df_in.copy()
@@ -268,45 +268,55 @@ def calc_bias_block(result_df_in,match_df_in,left_df_in,right_df_in, task , sens
     right_df  = right_df_in.copy()
 
     col, criteria = sens_dict[task]
+    if input_match_sens ==[]:
+        # --------------------------------
+        r_sens_col = result_df[col+'_right']
+        l_sens_col = result_df[col+'_left']
+
+        a = make_sens_vector(pd.DataFrame({col:r_sens_col}),task, sens_dict)
+        b = make_sens_vector(pd.DataFrame({col:l_sens_col}),task, sens_dict)
+
+        result = result_df.copy()
+        result['sens'] = np.logical_or(a, b)
+        print('sens res done')
+    else:
+        result = result_df.copy()
+        result['sens']= input_match_sens
+
 
     # --------------------------------
-    r_sens_col = result_df[col+'_right']
-    l_sens_col = result_df[col+'_left']
+    try:
+        match_df_sens = pd.read_csv('/Users/mohammad/Desktop/IEEE Blocking/MATCH_sens'+task+'.csv')
+    except:
 
-    a = make_sens_vector(pd.DataFrame({col:r_sens_col}),task, sens_dict)
-    b = make_sens_vector(pd.DataFrame({col:l_sens_col}),task, sens_dict)
+        left_M = list(match_df['ltable_id'])
+        right_M = list(match_df['rtable_id'])
 
-    result = result_df.copy()
-    result['sens'] = np.logical_or(a, b)
-
-    # --------------------------------
-    left_M = list(match_df['ltable_id'])
-    right_M = list(match_df['rtable_id'])
-
-    left_arr = []
-    for id in left_M:
-        try: 
-            row = list(left_df[left_df['id'] == id][col])[0]
-        except:
-            row = ''
-        left_arr.append(row)
+        left_arr = []
+        for id in left_M:
+            try: 
+                row = list(left_df[left_df['id'] == id][col])[0]
+            except:
+                row = ''
+            left_arr.append(row)
 
 
-    right_arr = []
-    for id in right_M:
-        try: 
-            row = list(right_df[right_df['id'] == id][col])[0]
-        except:
-            row = ''
-        right_arr.append(row)
+        right_arr = []
+        for id in right_M:
+            try: 
+                row = list(right_df[right_df['id'] == id][col])[0]
+            except:
+                row = ''
+            right_arr.append(row)
 
 
-    a = make_sens_vector(pd.DataFrame({col:left_arr}),task, sens_dict)
-    b = make_sens_vector(pd.DataFrame({col:right_arr}),task, sens_dict)
+        a = make_sens_vector(pd.DataFrame({col:left_arr}),task, sens_dict)
+        b = make_sens_vector(pd.DataFrame({col:right_arr}),task, sens_dict)
 
-    match_df_sens = match_df.copy()
-    match_df_sens['sens'] = np.logical_or(a, b)
-
+        match_df_sens = match_df.copy()
+        match_df_sens['sens'] = np.logical_or(a, b)
+        match_df_sens.to_csv('/Users/mohammad/Desktop/IEEE Blocking/MATCH_sens'+task+'.csv',index = False)
+        print('sens match done')
 
     # # --------------------------------
 
@@ -319,8 +329,15 @@ def calc_bias_block(result_df_in,match_df_in,left_df_in,right_df_in, task , sens
     C_minor_M = np.sum(np.logical_and(result['sens'] ,result['label'] == 1 ))
     C_major_M = np.sum(np.logical_and(~result['sens'] ,result['label'] == 1 ))
 
-    a = make_sens_vector(pd.DataFrame({col:left_df[col]}),task, sens_dict)
-    b = make_sens_vector(pd.DataFrame({col:right_df[col]}),task, sens_dict)
+    try:
+        a = np.array(list(pd.read_csv('/Users/mohammad/Desktop/IEEE Blocking/data/'+task+'/left_sens.csv')['0']))
+        b = np.array(list(pd.read_csv('/Users/mohammad/Desktop/IEEE Blocking/data/'+task+'/right_sens.csv')['0']))
+
+    except:
+        print('failed')
+
+        a = make_sens_vector(pd.DataFrame({col:left_df[col]}),task, sens_dict)
+        b = make_sens_vector(pd.DataFrame({col:right_df[col]}),task, sens_dict)
 
     P = len(a) * len(b)
     P_major = np.sum(~a) * np.sum(~b)

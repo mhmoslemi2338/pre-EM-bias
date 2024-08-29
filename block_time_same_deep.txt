@@ -1,0 +1,17 @@
+averages = [
+    ("Walmart-Amazon AE 0.01", 2.361281),
+    ("Walmart-Amazon AE 0.2", 8.007564),
+    ("Walmart-Amazon AE 0.4", 10.565273),
+    ("Walmart-Amazon AE 0.6", 13.298214),
+    ("Walmart-Amazon AE 0.8", 15.794987),
+    ("Walmart-Amazon AE 1", 19.118884)
+]
+
+new_averages_array = [
+    ("Walmart-Amazon CTT 0.01", 2.569706153869629),
+    ("Walmart-Amazon CTT 0.2", 10.010574245452881),
+    ("Walmart-Amazon CTT 0.4", 14.817002058029175),
+    ("Walmart-Amazon CTT 0.6", 20.32390217781067),
+    ("Walmart-Amazon CTT 0.8", 21.906998586654662),
+    ("Walmart-Amazon CTT 1", 25.958156061172485)
+]
