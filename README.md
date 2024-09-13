@@ -209,4 +209,96 @@ This document presents the results of assessing bias propagation from blocking t
 
 ---
 
+
+
+### DBLP-GoogleScholar Dataset Results
+
+#### StandardBlocking (SB)
+- **EOP**: 0.0065
+- **EO**: 0.0065
+- **DP**: 4.3342e-08
+- **Confusion Matrix**:
+  - Minority: `TP=37, FN=0, FP=0, TN=1128018`
+  - Majority: `TP=460, FN=3, FP=0, TN=14005497`
+
+#### ExtendedQGramsBlocking (EQG)
+- **EOP**: 0.0108
+- **EO**: 0.0108
+- **DP**: -9.9454e-08
+- **Confusion Matrix**:
+  - Minority: `TP=37, FN=0, FP=0, TN=1128018`
+  - Majority: `TP=458, FN=5, FP=0, TN=14005497`
+
+#### ExtendedSuffixArraysBlocking (ESA)
+- **EOP**: 0.0421
+- **EO**: 0.0421
+- **DP**: -1.1407e-06
+- **Confusion Matrix**:
+  - Minority: `TP=36, FN=1, FP=0, TN=1128018`
+  - Majority: `TP=431, FN=32, FP=0, TN=14005497`
+
+#### QGramsBlocking (QG)
+- **EOP**: 0.0065
+- **EO**: 0.0065
+- **DP**: 4.3342e-08
+- **Confusion Matrix**:
+  - Minority: `TP=37, FN=0, FP=0, TN=1128018`
+  - Majority: `TP=460, FN=3, FP=0, TN=14005497`
+
+#### SuffixArraysBlocking (SA)
+- **EOP**: 0.0518
+- **EO**: 0.0518
+- **DP**: -1.4560e-06
+- **Confusion Matrix**:
+  - Minority: `TP=37, FN=0, FP=0, TN=1128018`
+  - Majority: `TP=439, FN=24, FP=0, TN=14005497`
+
+---
+
+### iTunes-Amazon Dataset Results
+
+#### StandardBlocking (SB)
+- **EOP**: 0.0
+- **EO**: 0.0
+- **DP**: 4.5370e-07
+- **Confusion Matrix**:
+  - Minority: `TP=2, FN=0, FP=0, TN=15804497`
+  - Majority: `TP=11, FN=0, FP=0, TN=18957434`
+
+#### ExtendedQGramsBlocking (EQG)
+- **EOP**: 0.5
+- **EO**: 0.5
+- **DP**: 5.1697e-07
+- **Confusion Matrix**:
+  - Minority: `TP=1, FN=1, FP=0, TN=15804497`
+  - Majority: `TP=11, FN=0, FP=0, TN=18957434`
+
+#### ExtendedSuffixArraysBlocking (ESA)
+- **EOP**: 0.2727
+- **EO**: 0.2727
+- **DP**: 2.9545e-07
+- **Confusion Matrix**:
+  - Minority: `TP=2, FN=0, FP=0, TN=15804497`
+  - Majority: `TP=8, FN=3, FP=0, TN=18957434`
+
+#### QGramsBlocking (QG)
+- **EOP**: 0.0
+- **EO**: 0.0
+- **DP**: 4.5370e-07
+- **Confusion Matrix**:
+  - Minority: `TP=2, FN=0, FP=0, TN=15804497`
+  - Majority: `TP=11, FN=0, FP=0, TN=18957434`
+
+#### SuffixArraysBlocking (SA)
+- **EOP**: 0.0
+- **EO**: 0.0
+- **DP**: 4.5370e-07
+- **Confusion Matrix**:
+  - Minority: `TP=2, FN=0, FP=0, TN=15804497`
+  - Majority: `TP=11, FN=0, FP=0, TN=18957434`
+
+---
+
+
+
 The results demonstrate how different blocking methods affect bias metrics and classification performance for both minority and majority groups across various datasets.
