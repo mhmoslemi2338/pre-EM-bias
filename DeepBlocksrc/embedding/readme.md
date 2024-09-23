@@ -1,0 +1,1 @@
+doewnload bin file from here https://fasttext.cc/docs/en/pretrained-vectors.html
