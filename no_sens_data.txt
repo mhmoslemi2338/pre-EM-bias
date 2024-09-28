@@ -1,0 +1,288 @@
+data, method
+RR, PC, PQ, F
+Minor: RR_minor, PC_minor, PQ_minor,  Fb_minor
+major: RR_major, PC_major, PQ_major,  Fb_major
+diff : RR_major-RR_minor , PC_major- PC_minor, PQ_major - PQ_minor, Fb_major - Fb_minor
+
+
+
+
+Beer StandardBlocking
+99.9123 98.5294 0.5858 99.216
+Minor: 99.92 96.55 0.51 98.21
+major: 99.91 100.0 0.66 99.95
+diff : -0.01 3.45 0.15 1.75
+
+
+
+Beer ExtendedQGramsBlocking
+99.9157 94.1176 0.5823 96.93
+Minor: 99.92 96.55 0.54 98.21
+major: 99.91 92.31 0.62 95.96
+diff : -0.02 -4.24 0.08 -2.25
+
+
+Beer ExtendedSuffixArraysBlocking
+99.946 91.1765 0.8811 95.36
+Minor: 99.95 96.55 0.87 98.22
+major: 99.94 87.18 0.89 93.12
+diff : -0.01 -9.37 0.01 -5.1
+
+
+
+Beer QGramsBlocking
+99.9195 95.5882 0.6194 97.7059
+Minor: 99.93 96.55 0.55 98.21
+major: 99.91 94.87 0.68 97.33
+diff : -0.01 -1.68 0.13 -0.88
+
+
+
+Beer SuffixArraysBlocking
+99.9416 89.7059 0.8016 94.5475
+Minor: 99.95 96.55 0.79 98.22
+major: 99.94 84.62 0.81 91.64
+diff : -0.01 -11.94 0.02 -6.58
+
+
+
+Fodors-Zagat StandardBlocking
+99.2099 100.0 8.0344 99.6034
+Minor: 99.29 100.0 6.15 99.64
+major: 99.2 100.0 8.31 99.6
+diff : -0.09 0.0 2.17 -0.05
+
+
+
+Fodors-Zagat ExtendedQGramsBlocking
+99.2212 100.0 8.1514 99.6091
+Minor: 99.19 100.0 5.39 99.59
+major: 99.23 100.0 8.63 99.61
+diff : 0.04 0.0 3.24 0.02
+
+
+
+
+Fodors-Zagat ExtendedSuffixArraysBlocking
+99.5176 100.0 13.161 99.7582
+Minor: 99.47 100.0 8.21 99.73
+major: 99.53 100.0 14.09 99.76
+diff : 0.06 0.0 5.88 0.03
+
+
+
+
+Fodors-Zagat QGramsBlocking
+99.126 100.0 7.2633 99.5611
+Minor: 99.08 100.0 4.74 99.54
+major: 99.13 100.0 7.71 99.56
+diff : 0.05 0.0 2.97 0.03
+
+
+
+Fodors-Zagat SuffixArraysBlocking
+99.4666 100.0 11.9022 99.7326
+Minor: 99.46 100.0 8.03 99.73
+major: 99.47 100.0 12.56 99.73
+diff : 0.01 0.0 4.53 0.01
+
+
+
+Walmart-Amazon StandardBlocking
+99.8438 98.8565 1.0797 99.3477
+Minor: 99.78 96.59 1.52 98.16
+major: 99.85 99.08 1.05 99.46
+diff : 0.07 2.49 -0.47 1.3
+
+
+
+Walmart-Amazon ExtendedQGramsBlocking
+99.8329 98.5447 1.0063 99.1846
+Minor: 99.73 96.59 1.26 98.14
+major: 99.84 98.74 0.99 99.29
+diff : 0.1 2.15 -0.27 1.15
+
+
+
+Walmart-Amazon ExtendedSuffixArraysBlocking
+99.9644 88.6694 4.2503 93.9788
+Minor: 99.97 87.5 10.07 93.32
+major: 99.96 88.79 4.02 94.04
+diff : -0.01 1.29 -6.05 0.72
+
+
+
+Walmart-Amazon QGramsBlocking
+99.8411 98.8565 1.0618 99.3464
+Minor: 99.73 96.59 1.23 98.13
+major: 99.85 99.08 1.05 99.46
+diff : 0.12 2.49 -0.19 1.33
+
+
+
+Walmart-Amazon SuffixArraysBlocking
+99.9556 91.4761 3.5192 95.5281
+Minor: 99.97 86.36 9.67 92.67
+major: 99.96 91.99 3.32 95.81
+diff : -0.01 5.63 -6.35 3.14
+
+
+
+
+Amazon-Google StandardBlocking
+99.7319 97.8578 9.6886 98.786
+Minor: 99.7 96.67 7.17 98.16
+major: 99.73 97.92 9.87 98.82
+diff : 0.03 1.26 2.7 0.66
+
+
+
+Amazon-Google ExtendedQGramsBlocking
+99.7285 92.545 9.046 96.0025
+Minor: 99.49 86.67 3.74 92.64
+major: 99.74 92.86 9.74 96.18
+diff : 0.25 6.2 6.0 3.54
+
+
+
+Amazon-Google ExtendedSuffixArraysBlocking
+99.8628 83.7189 16.1969 91.081
+Minor: 99.84 66.67 8.93 79.95
+major: 99.86 84.64 16.78 91.63
+diff : 0.03 17.98 7.85 11.68
+
+
+
+Amazon-Google QGramsBlocking
+99.7248 94.6015 9.1225 97.0956
+Minor: 99.51 93.33 4.15 96.32
+major: 99.74 94.67 9.75 97.14
+diff : 0.23 1.34 5.59 0.82
+
+
+
+Amazon-Google SuffixArraysBlocking
+99.8494 85.5184 15.0687 92.1299
+Minor: 99.79 75.0 7.98 85.64
+major: 99.85 86.09 15.73 92.46
+diff : 0.06 11.09 7.75 6.82
+
+
+
+DBLP-ACM StandardBlocking
+99.9425 99.955 64.3002 99.9487
+Minor: 99.95 100.0 55.16 99.97
+major: 99.94 99.95 66.08 99.94
+diff : -0.01 -0.05 10.92 -0.03
+
+
+
+DBLP-ACM ExtendedQGramsBlocking
+99.9072 99.955 39.8527 99.9311
+Minor: 99.92 100.0 34.64 99.96
+major: 99.9 99.95 40.85 99.93
+diff : -0.01 -0.05 6.21 -0.03
+
+
+
+DBLP-ACM ExtendedSuffixArraysBlocking
+99.9135 97.2523 41.5832 98.5649
+Minor: 99.92 97.74 34.51 98.82
+major: 99.91 97.17 43.02 98.52
+diff : -0.01 -0.57 8.51 -0.3
+
+
+
+DBLP-ACM QGramsBlocking
+99.8964 100.0 35.6913 99.9481
+Minor: 99.91 100.0 32.16 99.96
+major: 99.89 100.0 36.34 99.95
+diff : -0.02 0.0 4.18 -0.01
+
+
+
+DBLP-ACM SuffixArraysBlocking
+99.9347 98.964 56.0888 99.447
+Minor: 99.95 99.35 51.59 99.65
+major: 99.93 98.9 56.9 99.41
+diff : -0.01 -0.45 5.31 -0.24
+
+
+
+DBLP-GoogleScholar StandardBlocking
+99.9482 98.9901 6.081 99.4668
+Minor: 99.99 98.76 39.13 99.37
+major: 99.94 99.01 5.69 99.47
+diff : -0.05 0.25 -33.44 0.1
+
+
+
+DBLP-GoogleScholar ExtendedQGramsBlocking
+99.9687 98.3542 10.0038 99.1549
+Minor: 99.99 98.51 24.19 99.24
+major: 99.97 98.34 9.55 99.15
+diff : -0.02 -0.17 -14.65 -0.1
+
+
+
+DBLP-GoogleScholar ExtendedSuffixArraysBlocking
+99.9862 76.9403 17.7872 86.9623
+Minor: 99.99 74.94 15.46 85.67
+major: 99.99 77.1 18.0 87.07
+diff : 0.0 2.17 2.55 1.4
+
+
+
+DBLP-GoogleScholar QGramsBlocking
+99.9703 99.2893 10.6169 99.6286
+Minor: 99.99 98.76 24.92 99.37
+major: 99.97 99.33 10.15 99.65
+diff : -0.02 0.57 -14.78 0.28
+
+
+
+DBLP-GoogleScholar SuffixArraysBlocking
+99.9842 82.7941 16.631 90.5808
+Minor: 99.98 81.64 16.42 89.88
+major: 99.98 82.89 16.65 90.64
+diff : -0.0 1.25 0.23 0.75
+
+
+
+iTunes-Amazon StandardBlocking
+99.8756 94.697 0.026 97.2174
+Minor: 99.94 92.5 0.04 96.08
+major: 99.83 95.65 0.02 97.69
+diff : -0.11 3.15 -0.01 1.62
+
+
+
+iTunes-Amazon ExtendedQGramsBlocking
+99.8076 69.697 0.0124 82.0779
+Minor: 99.9 65.0 0.01 78.76
+major: 99.74 71.74 0.01 83.45
+diff : -0.16 6.74 -0.0 4.7
+
+
+
+iTunes-Amazon ExtendedSuffixArraysBlocking
+99.9905 51.5152 0.1863 67.9978
+Minor: 99.99 50.0 0.14 66.66
+major: 99.99 52.17 0.22 68.57
+diff : -0.0 2.17 0.08 1.9
+
+
+
+iTunes-Amazon QGramsBlocking
+99.8266 73.4848 0.0145 84.6539
+Minor: 99.91 67.5 0.02 80.57
+major: 99.76 76.09 0.01 86.33
+diff : -0.14 8.59 -0.0 5.77
+
+
+
+iTunes-Amazon SuffixArraysBlocking
+99.9928 51.5152 0.2436 67.9983
+Minor: 99.99 52.5 0.21 68.85
+major: 99.99 51.09 0.26 67.62
+diff : -0.0 -1.41 0.05 -1.23
