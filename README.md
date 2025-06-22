@@ -302,3 +302,19 @@ This document presents the results of assessing bias propagation from blocking t
 
 
 The results demonstrate how different blocking methods affect bias metrics and classification performance for both minority and majority groups across various datasets.
+
+## Citation
+
+If you use this code, please cite our paper:
+
+```bibtex
+@INPROCEEDINGS{10825531,
+  author={Moslemi, Mohmmad Hossein and Balamurugan, Harini and Milani, Mostafa},
+  booktitle={2024 IEEE International Conference on Big Data (BigData)}, 
+  title={Evaluating Blocking Biases in Entity Matching}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={64-73},
+  keywords={Measurement;Data integration;Big Data;Computational complexity},
+  doi={10.1109/BigData62323.2024.10825531}}
