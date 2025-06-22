@@ -1,7 +1,6 @@
 # Official implementation of the IEEE Big Data 2024 paper "Evaluating Blocking Biases in Entity Matching"
 
 [![Paper: IEEE Big Data 2024](https://img.shields.io/badge/Paper-IEEE%20Big%20Data%202024-blue)](https://ieeexplore.ieee.org/document/10825531)
-[![DOI](https://img.shields.io/badge/DOI-10.1109%2FBigData62323.2024.10825531-blue)](https://doi.org/10.1109/BigData62323.2024.10825531)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)
 
