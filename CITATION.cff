@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: >
+  If you use this code, please cite our IEEE Big Data 2024 paper.
+
+title: Evaluating Blocking Biases in Entity Matching
+version: "1.0.0"
+doi: 10.1109/BigData62323.2024.10825531
+date-released: 2024-12-15     
+
+authors:
+  - family-names: Moslemi
+    given-names: Mohammad Hossein
+    orcid: https://orcid.org/0009-0002-0278-4665
+  - family-names: Balamurugan
+    given-names: Harini
+  - family-names: Milani
+    given-names: Mostafa
+
+repository-code: https://github.com/mhmoslemi2338/pre-EM-bias
+url: https://ieeexplore.ieee.org/document/10825531
+license: MIT
+
+preferred-citation:
+  type: conference-paper
+  title: Evaluating Blocking Biases in Entity Matching
+  authors:
+    - family-names: Moslemi
+      given-names: Mohammad Hossein
+    - family-names: Balamurugan
+      given-names: Harini
+    - family-names: Milani
+      given-names: Mostafa
+  conference-name: 2024 IEEE International Conference on Big Data (BigData)
+  year: 2024
+  pages: 64–73
+  doi: 10.1109/BigData62323.2024.10825531
